@@ -1,10 +1,10 @@
 #include<stdio.h>
-
-/*
- * main - this is function main
+/**
+ * main - Entry point
  * print "with proper grammar, but the outcome is a piece of art,"
- * return 0 if it true
+ * Return: Always 0 (Success)
  */
+
 int main(void)
 {
 	printf("with proper grammar, but the outcome is a piece of art,\n");
