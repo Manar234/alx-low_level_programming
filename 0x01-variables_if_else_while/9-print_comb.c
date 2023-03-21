@@ -11,7 +11,7 @@ int main(void)
 	int i = 44;
 	int u = 32;
 
-	for (c = 1; c < 10 ; c++)
+	for (c = 0; c < 10 ; c++)
 	{
 		putchar(c + 48);
 		if (c < 9)
