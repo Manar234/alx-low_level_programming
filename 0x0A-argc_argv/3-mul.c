@@ -9,14 +9,21 @@
  */
 int main(int argc, char *argv[])
 {
-	int n = 0, i = 0;
+	int n = 1, i = 0;
 
-	for (i = 0; i < argc; i++)
+	for (i = 1; i < argc; i++)
 	{
 	int x = atoi(argv[i]);
 
-	n += x;
+	n *= x;
 	}
+	if (n == 1)
+	{
+		printf("Error\n");
+	}
+	else
+	{
 	printf("%d\n", n);
+	}
 	return (0);
 }
