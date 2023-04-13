@@ -7,21 +7,17 @@
  * @size: size of array
  * @c: char to assign
  * Description: create array of size size and assign char c
- * Retrun: pointer to array, NULL if fail
+ * Return: a pointer to the array, or NULL if it fails
  */
 char *create_array(unsigned int size, char c)
 {
-	char *s;
+	char *t = malloc(size);
 
-	unsigned int r;
-
-	s = malloc(size * sizeof(char));
-
-	if (size == 0)
+	if (size == 0 || t == 0)
 	{
-		return (NULL);
+		return (0);
 	}
-	for (r = 0; r < size; r++)
-		s[r] = c;
-	return (s);
+	while (size--)
+		t[size] = c;
+	return (t);
 }
