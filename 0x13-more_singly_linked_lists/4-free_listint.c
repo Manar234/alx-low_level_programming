@@ -5,12 +5,12 @@
  */
 void free_listint(listint_t *head)
 {
-	listint_t *ptr = malloc(sizeof(listint_t));
+	listint_t *ptr;
 
-	while (ptr->next != NULL)
+	while (head != NULL)
 	{
-		ptr = ptr->next;
-		free(head);
-		head = ptr;
+		ptr = head;
+		head = head->next;
+		free(ptr);
 	}
 }
